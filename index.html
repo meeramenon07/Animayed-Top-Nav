@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.topnav {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  background-color: purple;
+  overflow: hidden;
+  transition: 0.9s;
+  padding: 40px;
+  text-align:center;
+}
+
+.topnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+
+}
+
+ 
+
+.topnav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .topnav {padding-top: 15px;}
+  .topnav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="myTopnav" class="topnav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Home</a>
+  <a href="#">Sale</a>
+  <a href="#">Gallery</a>
+
+</div>
+
+<h2>Animated Sidenav Example Full Width</h2>
+<p>Click on the element below to open the navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
